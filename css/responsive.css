@@ -1,0 +1,1180 @@
+/* =========================================================
+   RESPONSIVE.CSS
+   Sayeem Akber Portfolio
+   Mobile / Tablet / Desktop Responsive System
+   ========================================================= */
+
+
+/* =========================================================
+   1. LARGE TABLET / SMALL LAPTOP
+   Max Width: 1100px
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    :root {
+        --container: 94%;
+    }
+
+    /* ---------- Header ---------- */
+
+    .header-container {
+        padding: 0 3%;
+    }
+
+    .main-navigation ul {
+        gap: 24px;
+    }
+
+    .main-navigation a {
+        font-size: 13px;
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero-container {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 50px;
+    }
+
+    .hero-title {
+        font-size: clamp(52px, 6vw, 86px);
+    }
+
+    .hero-description {
+        max-width: 620px;
+    }
+
+    .profile-card {
+        max-width: 400px;
+    }
+
+
+    /* ---------- About ---------- */
+
+    .about-grid {
+        gap: 50px;
+    }
+
+    .about-title {
+        font-size: 46px;
+    }
+
+    .about-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- Competencies ---------- */
+
+    .competencies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- Experience ---------- */
+
+    .experience-item {
+        grid-template-columns: 160px 1fr;
+        gap: 30px;
+    }
+
+
+    /* ---------- Education ---------- */
+
+    .education-item {
+        grid-template-columns: 160px 1fr;
+        gap: 30px;
+    }
+
+
+    /* ---------- Certifications ---------- */
+
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- Awards ---------- */
+
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- Featured Projects ---------- */
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- Contact ---------- */
+
+    .contact-grid {
+        gap: 50px;
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer-grid {
+        grid-template-columns: 1.3fr 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+
+
+/* =========================================================
+   2. TABLET
+   Max Width: 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    html {
+        font-size: 15px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* ---------- Global ---------- */
+
+    .container {
+        width: 92%;
+        max-width: 100%;
+    }
+
+    .section {
+        padding: 90px 0;
+    }
+
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+    .section-title {
+        font-size: 44px;
+    }
+
+
+    /* ---------- Header ---------- */
+
+    .site-header {
+        height: 76px;
+    }
+
+    .header-container {
+        height: 76px;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.03);
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .mobile-menu-toggle span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: var(--text);
+        border-radius: 10px;
+        transition: var(--transition);
+    }
+
+    .mobile-menu-toggle:hover {
+        border-color: var(--accent);
+    }
+
+    .mobile-menu-toggle:hover span {
+        background: var(--accent);
+    }
+
+
+    /* Hamburger active state */
+
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+
+    /* ---------- Mobile Navigation ---------- */
+
+    .main-navigation {
+        position: fixed;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 76px);
+
+        padding: 35px 6%;
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(5, 5, 5, 0.98),
+                rgba(5, 5, 5, 0.96)
+            );
+
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
+
+        border-top: 1px solid var(--border);
+
+        transform: translateX(100%);
+        visibility: hidden;
+        opacity: 0;
+
+        transition:
+            transform 0.4s ease,
+            opacity 0.4s ease,
+            visibility 0.4s ease;
+
+        z-index: 999;
+        overflow-y: auto;
+    }
+
+    .main-navigation.mobile-open {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .main-navigation ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        width: 100%;
+    }
+
+    .main-navigation li {
+        width: 100%;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .main-navigation li:last-child {
+        border-bottom: none;
+    }
+
+    .main-navigation a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        padding: 20px 0;
+
+        font-size: 18px;
+    }
+
+    .main-navigation a::after {
+        content: "↗";
+        font-size: 18px;
+        opacity: 0.4;
+        transition: var(--transition);
+    }
+
+    .main-navigation a:hover::after {
+        color: var(--accent);
+        opacity: 1;
+        transform: translate(3px, -3px);
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        min-height: auto;
+        padding-top: 130px;
+        padding-bottom: 90px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .hero-content {
+        max-width: 800px;
+    }
+
+    .hero-title {
+        font-size: clamp(50px, 9vw, 76px);
+        line-height: 0.95;
+    }
+
+    .hero-description {
+        max-width: 680px;
+        font-size: 17px;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+    }
+
+    .hero-profile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 480px;
+    }
+
+
+    /* ---------- About ---------- */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .about-content {
+        max-width: 800px;
+    }
+
+    .about-title {
+        font-size: 44px;
+    }
+
+    .about-description {
+        max-width: 760px;
+    }
+
+    .about-details {
+        max-width: 760px;
+    }
+
+
+    /* ---------- Competencies ---------- */
+
+    .competencies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- Experience ---------- */
+
+    .experience-filters {
+        margin-bottom: 45px;
+    }
+
+    .experience-item {
+        grid-template-columns: 130px 1fr;
+        gap: 25px;
+        padding: 30px 0;
+    }
+
+    .experience-date {
+        font-size: 13px;
+    }
+
+
+    /* ---------- Education ---------- */
+
+    .education-item {
+        grid-template-columns: 130px 1fr;
+        gap: 25px;
+    }
+
+
+    /* ---------- Certifications ---------- */
+
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- Awards ---------- */
+
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- Projects ---------- */
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .project-content {
+        padding: 22px;
+    }
+
+
+    /* ---------- Contact ---------- */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .contact-info {
+        max-width: 700px;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .cta-content {
+        max-width: 800px;
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+
+
+/* =========================================================
+   3. MOBILE
+   Max Width: 700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    html {
+        font-size: 14px;
+        scroll-padding-top: 80px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* ---------- Global ---------- */
+
+    .container {
+        width: 90%;
+    }
+
+    .section {
+        padding: 75px 0;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-number {
+        font-size: 12px;
+    }
+
+    .section-title {
+        font-size: 38px;
+        line-height: 1.05;
+    }
+
+    .section-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- Header ---------- */
+
+    .site-header {
+        height: 70px;
+    }
+
+    .header-container {
+        height: 70px;
+        padding: 0 5%;
+    }
+
+    .site-logo {
+        font-size: 20px;
+    }
+
+    .mobile-menu-toggle {
+        width: 42px;
+        height: 42px;
+    }
+
+    .main-navigation {
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        padding-top: 110px;
+        padding-bottom: 70px;
+    }
+
+    .hero-container {
+        gap: 50px;
+    }
+
+    .availability-badge {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+
+    .hero-title {
+        font-size: clamp(42px, 13vw, 68px);
+        letter-spacing: -0.045em;
+        line-height: 0.96;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .hero-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-skills {
+        gap: 8px;
+    }
+
+    .skill-tag {
+        font-size: 11px;
+        padding: 7px 10px;
+    }
+
+
+    /* ---------- Profile Card ---------- */
+
+    .profile-card {
+        max-width: 100%;
+    }
+
+    .profile-card-image {
+        min-height: 420px;
+    }
+
+    .profile-card-info {
+        padding: 20px;
+    }
+
+    .profile-name {
+        font-size: 22px;
+    }
+
+
+    /* ---------- About ---------- */
+
+    .about-grid {
+        gap: 40px;
+    }
+
+    .about-title {
+        font-size: 36px;
+    }
+
+    .about-description {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .about-details {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .detail-item {
+        padding: 16px 0;
+    }
+
+
+    /* ---------- Competencies ---------- */
+
+    .competencies-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .competency-card {
+        padding: 22px;
+    }
+
+
+    /* ---------- Experience ---------- */
+
+    .experience-filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .filter-btn {
+        font-size: 12px;
+        padding: 9px 14px;
+    }
+
+    .experience-list {
+        border-top: 1px solid var(--border);
+    }
+
+    .experience-item {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 28px 0;
+    }
+
+    .experience-date {
+        color: var(--accent);
+    }
+
+    .experience-title {
+        font-size: 21px;
+    }
+
+    .experience-company {
+        font-size: 14px;
+    }
+
+    .experience-description {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+
+    /* ---------- Education ---------- */
+
+    .education-item {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 25px 0;
+    }
+
+    .education-year {
+        color: var(--accent);
+    }
+
+    .education-title {
+        font-size: 20px;
+    }
+
+    .education-description {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+
+    /* ---------- Certifications ---------- */
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .certification-card {
+        padding: 22px;
+    }
+
+    .certification-title {
+        font-size: 19px;
+    }
+
+
+    /* ---------- Awards ---------- */
+
+    .awards-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .award-card {
+        padding: 22px;
+    }
+
+
+    /* ---------- Featured ---------- */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project-image {
+        aspect-ratio: 16 / 10;
+    }
+
+    .project-content {
+        padding: 20px;
+    }
+
+    .project-title {
+        font-size: 21px;
+    }
+
+    .project-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- Contact ---------- */
+
+    .contact-grid {
+        gap: 45px;
+    }
+
+    .contact-title {
+        font-size: 34px;
+    }
+
+    .contact-description {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .contact-details {
+        gap: 20px;
+    }
+
+    .contact-item {
+        padding: 18px;
+    }
+
+    .contact-form {
+        padding: 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 14px;
+    }
+
+    .contact-form .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .cta {
+        padding: 70px 0;
+    }
+
+    .cta-title {
+        font-size: 38px;
+    }
+
+    .cta-description {
+        font-size: 15px;
+    }
+
+    .cta-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer {
+        padding: 60px 0 25px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-description {
+        max-width: 500px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+
+
+/* =========================================================
+   4. SMALL MOBILE
+   Max Width: 480px
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* ---------- Global ---------- */
+
+    .container {
+        width: 88%;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+
+    /* ---------- Header ---------- */
+
+    .header-container {
+        padding: 0 6%;
+    }
+
+    .site-logo {
+        font-size: 18px;
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero-title {
+        font-size: clamp(39px, 14vw, 58px);
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-skills {
+        max-width: 100%;
+    }
+
+    .skill-tag {
+        font-size: 10px;
+        padding: 6px 9px;
+    }
+
+
+    /* ---------- Profile ---------- */
+
+    .profile-card-image {
+        min-height: 350px;
+    }
+
+    .profile-card-info {
+        padding: 18px;
+    }
+
+    .profile-name {
+        font-size: 20px;
+    }
+
+
+    /* ---------- About ---------- */
+
+    .about-title {
+        font-size: 31px;
+    }
+
+    .about-description {
+        font-size: 14px;
+    }
+
+
+    /* ---------- Experience ---------- */
+
+    .experience-title {
+        font-size: 19px;
+    }
+
+
+    /* ---------- Education ---------- */
+
+    .education-title {
+        font-size: 19px;
+    }
+
+
+    /* ---------- Cards ---------- */
+
+    .competency-card,
+    .certification-card,
+    .award-card {
+        padding: 19px;
+    }
+
+
+    /* ---------- Project ---------- */
+
+    .project-content {
+        padding: 18px;
+    }
+
+    .project-title {
+        font-size: 19px;
+    }
+
+
+    /* ---------- Contact ---------- */
+
+    .contact-title {
+        font-size: 30px;
+    }
+
+    .contact-form {
+        padding: 18px;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .cta-title {
+        font-size: 31px;
+    }
+
+
+    /* ---------- Buttons ---------- */
+
+    .btn {
+        min-height: 48px;
+        padding: 12px 18px;
+        font-size: 12px;
+    }
+
+
+    /* ---------- Back To Top ---------- */
+
+    .back-to-top {
+        width: 42px;
+        height: 42px;
+        right: 16px;
+        bottom: 16px;
+    }
+}
+
+
+
+/* =========================================================
+   5. VERY SMALL DEVICES
+   Max Width: 360px
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .container {
+        width: 86%;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .section-title {
+        font-size: 29px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .cta-title {
+        font-size: 28px;
+    }
+
+    .main-navigation a {
+        font-size: 17px;
+    }
+
+    .profile-card-image {
+        min-height: 310px;
+    }
+}
+
+
+
+/* =========================================================
+   6. LANDSCAPE MOBILE
+   ========================================================= */
+
+@media (max-height: 600px) and (orientation: landscape) {
+
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .main-navigation {
+        overflow-y: auto;
+    }
+
+    .main-navigation a {
+        padding: 13px 0;
+    }
+
+    .profile-card-image {
+        min-height: 300px;
+    }
+}
+
+
+
+/* =========================================================
+   7. TOUCH DEVICES
+   ========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+    .project-card:hover {
+        transform: none;
+    }
+
+    .competency-card:hover {
+        transform: none;
+    }
+
+    .award-card:hover {
+        transform: none;
+    }
+
+    .certification-card:hover {
+        transform: none;
+    }
+
+    .profile-card:hover {
+        transform: none;
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+}
+
+
+
+/* =========================================================
+   8. REDUCED MOTION
+   Accessibility
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+
+/* =========================================================
+   9. DARK MODE SAFETY
+   ========================================================= */
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: var(--bg);
+        color: var(--text);
+    }
+}
+
+
+
+/* =========================================================
+   10. PREVENT HORIZONTAL OVERFLOW
+   ========================================================= */
+
+img,
+svg,
+video,
+canvas,
+iframe {
+    max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+    max-width: 100%;
+}
+
+table {
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+
+
+/* =========================================================
+   END OF RESPONSIVE.CSS
+   ========================================================= */
