@@ -1,1432 +1,214 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="Sayeem Akber — Brand Designer, WordPress Developer and AI Developer."
-    >
-
-    <meta
-        name="keywords"
-        content="Sayeem Akber, Brand Designer, Logo Designer, WordPress Developer, AI Developer, UI UX Designer"
-    >
-
-    <meta name="author" content="Sayeem Akber">
-
-    <title>Sayeem Akber — Brand Designer & Developer</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="./css/responsive.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0e0b">
+  <meta name="description" content="Sayeem A. — Founder of CreXstudio, brand designer, web developer and AI enthusiast.">
+  <title>Sayeem A. — Digital Creator & Founder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-    <!-- Cinematic cursor is injected by JavaScript -->
-
-<!-- =========================================================
-     PAGE LOADER
-========================================================= -->
-
-<div class="page-loader" id="pageLoader">
-    <div class="loader-content">
-        <span class="loader-logo">SA</span>
-        <span class="loader-text">Loading...</span>
-    </div>
-</div>
-
-
-<!-- =========================================================
-     HEADER
-========================================================= -->
-
-<header class="site-header" id="siteHeader">
-
-    <div class="container header-container">
-
-        <!-- Logo -->
-        <a href="#home" class="site-logo">
-            <span class="logo-mark">SA</span>
-            <span class="logo-text">Sayeem Akber</span>
-        </a>
-
-
-        <!-- Desktop Navigation -->
-        <nav class="main-navigation" id="mainNavigation">
-
-            <a href="#about" class="nav-link">
-                About
-            </a>
-
-            <a href="#experience" class="nav-link">
-                Experience
-            </a>
-
-            <a href="#education" class="nav-link">
-                Education
-            </a>
-
-            <a href="#awards" class="nav-link">
-                Awards
-            </a>
-
-            <a href="#featured" class="nav-link">
-                Featured
-            </a>
-
-            <a href="#contact" class="nav-link nav-hire">
-                Hire Me
-            </a>
-
-        </nav>
-
-
-        <!-- Mobile Menu Button -->
-        <button
-            class="mobile-menu-toggle"
-            id="mobileMenuToggle"
-            aria-label="Open navigation menu"
-            aria-expanded="false"
-        >
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-    </div>
-
-</header>
-
-
-<!-- Floating section navigation -->
-<div class="motion-rail" aria-label="Section navigation">
-  <a href="#home" data-section="home" title="Home">⌂</a>
-  <span class="rail-line"></span>
-  <a href="#about" data-section="about" title="About">●</a>
-  <a href="#experience" data-section="experience" title="Experience">▣</a>
-  <a href="#education" data-section="education" title="Education">◇</a>
-  <a href="#awards" data-section="awards" title="Awards">♛</a>
-  <a href="#featured" data-section="featured" title="Work">▤</a>
-  <a href="#contact" data-section="contact" title="Contact">➤</a>
-</div>
-<div class="pointer-spot" aria-hidden="true"></div>
-
-<!-- =========================================================
-     MAIN
-========================================================= -->
-
-<main>
-
-
-<!-- =========================================================
-     HERO SECTION
-========================================================= -->
-
-<section class="hero-section" id="home">
-
-    <div class="hero-background">
-
-        <div class="hero-grid"></div>
-
-        <div class="hero-glow hero-glow-one"></div>
-
-        <div class="hero-glow hero-glow-two"></div>
-
-    </div>
-
-
-    <div class="container hero-container">
-
-        <!-- Hero Content -->
-
-        <div class="hero-content">
-
-            <!-- Availability -->
-
-            <div class="availability-badge">
-
-                <span class="availability-dot"></span>
-
-                <span>
-                    Available for Opportunities
-                </span>
-
-            </div>
-
-
-            <!-- Main Heading -->
-
-            <h1 class="hero-title">
-
-                <span class="hero-name">
-                    Sayeem Akber
-                </span>
-
-                <span class="hero-headline">
-                    BUILDING BRANDS
-                    <br>
-                    CREATING DIGITAL
-                    <br>
-                    EXPERIENCES.
-                </span>
-
-            </h1>
-
-
-            <!-- Introduction -->
-
-            <p class="hero-description">
-
-                I’m a Brand Designer, WordPress Developer, and AI Developer
-                focused on creating meaningful identities, modern websites,
-                and digital experiences that help businesses grow.
-
-            </p>
-
-
-            <!-- Hero Buttons -->
-
-            <div class="hero-buttons">
-
-                <a href="#featured" class="btn btn-primary">
-                    <span>View My Work</span>
-                    <span class="btn-arrow">↗</span>
-                </a>
-
-
-                <a
-                    href="assets/Sayeem_Akber_Resume-1.pdf"
-                    class="btn btn-primary"
-                    target="_blank">
-                >
-                    <span>Download Resume</span>
-                    <span class="btn-arrow">↓</span>
-                </a>
-
-            </div>
-
-
-            <!-- Skill Tags -->
-
-            <div class="skill-tags">
-
-                <span class="skill-tag">
-                    Brand Design
-                </span>
-
-                <span class="skill-tag">
-                    Logo Design
-                </span>
-
-                <span class="skill-tag">
-                    WordPress
-                </span>
-
-                <span class="skill-tag">
-                    Elementor
-                </span>
-
-                <span class="skill-tag">
-                    UI/UX
-                </span>
-
-                <span class="skill-tag">
-                    AI Development
-                </span>
-
-            </div>
-
+  <div class="site-loader" aria-hidden="true"><div class="loader-inner"><span class="loader-name">SAYEEM<span>.</span>A</span><div class="loader-line"></div></div></div>
+  <div class="custom-cursor" aria-hidden="true"></div><div class="custom-cursor-ring" aria-hidden="true"><span class="cursor-label"></span></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Sayeem A. home">SAYEEM<span>.</span>A</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#journey">Journey</a>
+      <a href="#projects">Projects</a><a href="#awards">Awards</a>
+    </nav>
+    <a class="header-cta" href="#contact">Let's talk <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="availability"><i></i> OPEN TO SELECT OPPORTUNITIES</div>
+        <p class="eyebrow">DESIGN · DEVELOPMENT · AI</p>
+        <h1>Building trust.<br>Driving <em>growth</em><br>through digital.</h1>
+        <p class="hero-intro">I'm Sayeem Akber — a creative entrepreneur and Founder of CreXstudio. I turn ideas into thoughtful brands, useful websites and digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-lime" href="#projects">Explore my work <span>↗</span></a>
+          <a class="button button-outline" href="resume/Sayeem_Akber_Resume-1.pdf" target="_blank" rel="noopener" data-resume>View resume <span>↗</span></a>
         </div>
-
-
-        <!-- Hero Profile Card -->
-
-        <div class="hero-profile">
-
-            <div class="profile-card">
-
-                <div class="profile-image-wrapper">
-
-                    <div class="profile-image-glow"></div>
-
-                    <img
-                        src="./assets/profile.jpg"
-                        alt="Sayeem Akber"
-                        class="profile-image"
-                    >
-
-                </div>
-
-
-                <div class="profile-card-content">
-
-                    <span class="profile-role">
-                        Creative Developer
-                    </span>
-
-                    <h2>
-                        Sayeem Akber
-                    </h2>
-
-                    <p>
-                        Brand Designer · WordPress Developer · AI Developer
-                    </p>
-
-                </div>
-
-
-                <div class="profile-status">
-
-                    <span class="status-dot"></span>
-
-                    <span>
-                        Open to work
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Location -->
-
-            <div class="hero-location">
-
-                <span class="location-icon">
-                    ●
-                </span>
-
-                <span>
-                    Bangladesh
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     ABOUT SECTION
-========================================================= -->
-
-<section class="about-section section" id="about">
-
-    <div class="container">
-
-        <div class="section-header reveal-up">
-
-            <span class="section-number">
-                01
-            </span>
-
-            <span class="section-label">
-                About Me
-            </span>
-
-        </div>
-
-
-        <div class="about-grid">
-
-            <!-- About Intro -->
-
-            <div class="about-intro">
-
-                <h2 class="section-title reveal-up">
-                    DESIGNING IDEAS.
-                    <br>
-                    BUILDING POSSIBILITIES.
-                </h2>
-
-                <p class="about-text">
-
-                    I’m Sayeem Akber, a creative professional specializing
-                    in brand identity, logo design, WordPress development,
-                    UI/UX design, and AI-powered digital solutions.
-
-                </p>
-
-                <p class="about-text">
-
-                    My approach combines strategic thinking, visual design,
-                    technology, and user experience to create digital
-                    products and brands that feel modern, useful, and memorable.
-
-                </p>
-
-            </div>
-
-
-            <!-- About Details -->
-
-            <div class="about-details">
-
-                <div class="detail-item">
-
-                    <span class="detail-label">
-                        Location
-                    </span>
-
-                    <span class="detail-value">
-                        Bangladesh
-                    </span>
-
-                </div>
-
-
-                <div class="detail-item">
-
-                    <span class="detail-label">
-                        Email
-                    </span>
-
-                    <a
-                        href="mailto:sayeemakber1@gmail.com"
-                        class="detail-value"
-                    >
-                        sayeemakber1@gmail.com
-                    </a>
-
-                </div>
-
-
-                <div class="detail-item">
-
-                    <span class="detail-label">
-                        Availability
-                    </span>
-
-                    <span class="detail-value available">
-                        Available for freelance
-                    </span>
-
-                </div>
-
-
-                <div class="detail-item">
-
-                    <span class="detail-label">
-                        Agency
-                    </span>
-
-                    <span class="detail-value">
-                    <a
-                        CreXstudio
-                        href="https://maps.app.goo.gl/f614eNkwhaEniSdW6"
-                    >
-                        CreXstudio
-                    </a>
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Core Competencies -->
-
-        <div class="competencies">
-
-            <div class="competencies-heading">
-
-                <span>
-                    Core Competencies
-                </span>
-
-            </div>
-
-
-            <div class="competency-grid">
-
-                <div class="competency-card">
-
-                    <span class="competency-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Brand & Visual Design
-                    </h3>
-
-                    <p>
-                        Logo design, brand identity, visual systems,
-                        and creative direction.
-                    </p>
-
-                </div>
-
-
-                <div class="competency-card">
-
-                    <span class="competency-number">
-                        02
-                    </span>
-
-                    <h3>
-                        Web Development
-                    </h3>
-
-                    <p>
-                        WordPress, Elementor, responsive websites,
-                        landing pages, and business websites.
-                    </p>
-
-                </div>
-
-
-                <div class="competency-card">
-
-                    <span class="competency-number">
-                        03
-                    </span>
-
-                    <h3>
-                        UI / UX Design
-                    </h3>
-
-                    <p>
-                        Clean interfaces, user journeys,
-                        prototypes, and modern digital experiences.
-                    </p>
-
-                </div>
-
-
-                <div class="competency-card">
-
-                    <span class="competency-number">
-                        04
-                    </span>
-
-                    <h3>
-                        AI Development
-                    </h3>
-
-                    <p>
-                        AI-powered applications, automation,
-                        intelligent interfaces, and experimental products.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     EXPERIENCE SECTION
-========================================================= -->
-
-<section class="experience-section section" id="experience">
-  <div class="container">
-    <div class="section-header reveal-up">
-      <span class="section-number">02</span>
-      <span class="section-label">Where I've Been</span>
-    </div>
-
-    <div class="section-heading-row">
-      <h2 class="section-title reveal-up">PROFESSIONAL<br><span class="accent-word">JOURNEY</span></h2>
-      <div class="experience-filters" role="tablist" aria-label="Professional journey filters">
-        <button class="filter-btn active" data-filter="all">All <b>4</b></button>
-        <button class="filter-btn" data-filter="active">Active <b>2</b></button>
-        <button class="filter-btn" data-filter="past">Past <b>2</b></button>
+        <p class="resume-note" data-resume-note hidden>Sayeem_Akber_Resume-1.pdf <code>resume/Sayeem_Akber_Resume-1.pdf</code> to activate this link.</p>
       </div>
-    </div>
-
-    <div class="experience-list cinematic-timeline">
-      <article class="experience-item timeline-left timeline-feature" data-category="active">
-        <div class="experience-date"><span>01</span><small>CURRENT</small></div>
-        <div class="experience-main">
-          <div class="timeline-topline"><span class="experience-status">ACTIVE</span><span class="timeline-year">PRESENT</span></div>
-          <div class="experience-company"><h3>JoarderTech</h3></div>
-          <div class="experience-role">Web Designer &amp; Developer</div>
-          <p class="experience-description">Creating modern websites, landing pages and digital experiences with a strong focus on visual design, performance, responsive layouts and polished interactions.</p>
-          <div class="experience-tags"><span>Web Design</span><span>WordPress</span><span>UI/UX</span><span>Development</span></div>
-          <div class="timeline-line-detail"><i></i><span>Building useful digital experiences</span></div>
+      <div class="hero-art reveal">
+        <div class="portrait-halo"></div>
+        <div class="portrait-frame">
+          <img src="assets/IMG_20260611_183912.jpg.JPEG" alt="Portrait of Sayeem Akber" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+          <div class="portrait-fallback" hidden><span>SA</span><small>YOUR PICTURE</small></div>
         </div>
-      </article>
+        <div class="float-card float-top"><b>Founder & CEO</b><small>CreXstudio</small></div>
+        <div class="float-card float-bottom"><span class="float-icon">✳</span><span><b>Creative builder</b><small>Ideas into impact</small></span></div>
+        <span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span>
+      </div>
+    </section>
 
-      <article class="experience-item timeline-right" data-category="active">
-        <div class="experience-date"><span>02</span><small>CURRENT</small></div>
-        <div class="experience-main">
-          <div class="timeline-topline"><span class="experience-status">ACTIVE</span><span class="timeline-year">ONGOING</span></div>
-          <div class="experience-company"><h3>HEZOX</h3></div>
-          <div class="experience-role">Creative Designer &amp; Developer</div>
-          <p class="experience-description">Creating modern visual identities, websites and digital experiences with a focus on clean design, usability, responsive development and polished interactions.</p>
-          <div class="experience-tags"><span>Creative Design</span><span>Web Development</span><span>UI/UX</span></div>
-        </div>
-      </article>
+    <section class="stats section-wrap reveal" aria-label="Portfolio highlights">
+      <div class="stats-caption">A FEW THINGS ABOUT MY WORK</div>
+      <div class="stats-grid">
+        <div><strong>03<span>+</span></strong><small>Creative disciplines</small></div>
+        <div><strong>∞</strong><small>Ideas to explore</small></div>
+        <div><strong>07</strong><small>Studio in progress</small></div>
+        <div><strong>100<span>%</span></strong><small>Curiosity & commitment</small></div>
+      </div>
+    </section>
 
-      <article class="experience-item timeline-left" data-category="past">
-        <div class="experience-date"><span>03</span><small>PREVIOUS</small></div>
-        <div class="experience-main">
-          <div class="timeline-topline"><span class="experience-status past-status">PAST</span><span class="timeline-year">PREVIOUS</span></div>
-          <div class="experience-company"><h3>Independent</h3></div>
-          <div class="experience-role">Brand Designer &amp; WordPress Developer</div>
-          <p class="experience-description">Designing logos, brand identities, WordPress websites, Elementor pages and digital interfaces for businesses and entrepreneurs.</p>
-          <div class="experience-tags"><span>Branding</span><span>Logo Design</span><span>Elementor</span></div>
-        </div>
-      </article>
+    <section class="about section-wrap section-space" id="about">
+      <div class="about-copy reveal">
+        <p class="eyebrow">01 / A LITTLE ABOUT ME</p>
+        <h2>I turn customer insight into <em>products people trust.</em></h2>
+        <p>I'm Sayeem Akber, a designer and developer interested in the intersection of creativity and technology. I enjoy shaping clear visual identities and building accessible, responsive web experiences.</p>
+        <p>Through CreXstudio, I'm working toward a studio that helps people and businesses communicate better and bring useful ideas to life.</p>
+        <div class="chips"><span>Bangladesh</span><span>Founder @ CreXstudio</span><span>Always learning</span></div>
+      </div>
+      <div class="expertise reveal" id="expertise">
+        <p class="eyebrow">WHAT I WORK ON</p>
+        <article class="skill-row"><span>01</span><div><h3>Brand & visual design</h3><p>Logo design · Brand identity · Graphic design · UI direction</p></div><b>↗</b></article>
+        <article class="skill-row"><span>02</span><div><h3>Web development</h3><p>HTML · CSS · JavaScript · WordPress · Elementor</p></div><b>↗</b></article>
+        <article class="skill-row"><span>03</span><div><h3>AI & digital products</h3><p>AI websites · AI agents · Workflow automation · Integrations</p></div><b>↗</b></article>
+        <article class="skill-row"><span>04</span><div><h3>Tools & workflow</h3><p>VS Code · Figma · GitHub · WordPress</p></div><b>↗</b></article>
+      </div>
+    </section>
 
-      <article class="experience-item timeline-right" data-category="past">
-        <div class="experience-date"><span>04</span><small>PREVIOUS</small></div>
-        <div class="experience-main">
-          <div class="timeline-topline"><span class="experience-status past-status">PAST</span><span class="timeline-year">PROJECTS</span></div>
-          <div class="experience-company"><h3>Creative Projects</h3></div>
-          <div class="experience-role">Designer &amp; Developer</div>
-          <p class="experience-description">Delivered creative design and web projects for different businesses, organizations and digital brands.</p>
-          <div class="experience-tags"><span>Creative Design</span><span>Web</span><span>Brand Identity</span></div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-
-<!-- =========================================================
-     EDUCATION SECTION
-========================================================= -->
-
-<section class="education-section section" id="education">
-  <div class="container">
-    <div class="section-header reveal-up"><span class="section-number">03</span><span class="section-label">Academic Journey</span></div>
-    <div class="academic-layout">
-      <div class="education-column">
-        <h2 class="section-title reveal-up">ACADEMIC<br><span class="accent-word">JOURNEY</span></h2>
-        <div class="education-list">
-         <article class="education-item reveal-up"><div class="education-year">2026</div><div class="education-content"><span class="education-type">University of London BACHELOR OF SCIENCE</span><h3>Business Administration — FinTech</h3><p>FinTech focused Bachelor of Science in Business Administration.</p></div><span class="education-index">03</span></article>
-         <article class="education-item reveal-up"><div class="education-year"></div><div class="education-content"><span class="education-type">DIPLOMA</span><h3>Computer Science &amp; Technology</h3><p>Magura Polytechnic Institute.</p></div><span class="education-index">02</span></article>
-          <article class="education-item reveal-up"><div class="education-year"></div><div class="education-content"><span class="education-type">SECONDARY SCHOOL CERTIFICATE</span><h3>Mohammadpur Pallah High School</h3><p>Secondary School Certificate (SSC).</p></div><span class="education-index">01</span></article>
+    <section class="section-wrap section-space" id="journey">
+      <div class="section-head reveal">
+        <div><p class="eyebrow">02 / THE JOURNEY</p><h2>Where I've been <em>building.</em></h2></div>
+        <div class="filter-group" role="group" aria-label="Filter journey cards">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="current" aria-pressed="false">Current</button>
+          <button class="filter-btn" data-filter="past" aria-pressed="false">Past</button>
         </div>
       </div>
-      <div class="cert-column">
-        <div class="mini-section-kicker">03.1 / CREDENTIALS</div>
-        <h3 class="cert-heading">CERTIFICATIONS</h3>
-        <div class="certification-grid">
-          <article class="certification-card"><span class="certification-number">01</span><h3>Web Development</h3><p>Modern web technologies</p></article>
-          <article class="certification-card"><span class="certification-number">02</span><h3>WordPress</h3><p>CMS &amp; site building</p></article>
-          <article class="certification-card"><span class="certification-number">03</span><h3>UI / UX</h3><p>Digital interface design</p></article>
-          <article class="certification-card"><span class="certification-number">04</span><h3>Brand Design</h3><p>Identity &amp; visual systems</p></article>
-          <article class="certification-card"><span class="certification-number">05</span><h3>AI Development</h3><p>AI &amp; automation</p></article>
-          <article class="certification-card"><span class="certification-number">06</span><h3>Elementor</h3><p>Advanced page building</p></article>
-        </div>
+      <div class="journey-feature reveal" data-category="current">
+        <div><span class="pill">CURRENT · BUILDING</span><h3>CreXstudio</h3><p class="role">Founder & CEO</p><p>Developing a creative digital studio focused on branding, web experiences and AI-powered solutions.</p></div>
+        <span class="journey-date">2026 — PRESENT</span>
+        <div class="feature-mark">C<span>.</span></div>
       </div>
-    </div>
-  </div>
-</section>
+      <div class="journey-cards">
+        <article class="journey-card reveal" data-category="past"><span class="card-kicker">DESIGN</span><h3>Independent Brand Designer</h3><p>Creating logos, brand identities and visual systems for digital-first ideas.</p><div class="mini-tags"><span>Branding</span><span>Logo design</span></div></article>
+        <article class="journey-card reveal" data-category="past"><span class="card-kicker">DEVELOPMENT</span><h3>WordPress Developer</h3><p>Building responsive WordPress websites, Elementor pages and interfaces.</p><div class="mini-tags"><span>WordPress</span><span>Elementor</span></div></article>
+        <article class="journey-card reveal" data-category="current"><span class="card-kicker">EXPLORING</span><h3>AI & Technology</h3><p>Learning and experimenting with AI agents, automation and intelligent applications.</p><div class="mini-tags"><span>AI</span><span>JavaScript</span></div></article>
+      </div>
+      <div class="education reveal">
+        <div class="education-title"><span class="eyebrow">EDUCATION</span><span>ACADEMIC BACKGROUND</span></div>
+        <article><time>2026 — PRESENT</time><div><h3>FinTech — Bachelor of Science in Business Administration</h3><p>Higher education</p></div></article>
+        <article><time>2025</time><div><h3>Diploma in Computer Science & Technology</h3><p>Magura Polytechnic Institute</p></div></article>
+        <article><time>2020</time><div><h3>Secondary School Certificate (SSC)</h3><p>Mohammadpur Pallah High School</p></div></article>
+      </div>
+    </section>
 
+    <section class="section-wrap section-space" id="projects">
+      <div class="section-head reveal"><div><p class="eyebrow">03 / SELECTED WORK</p><h2>Things I've <em>created.</em></h2></div><p class="section-aside">A selection of experiments<br>and digital work.</p></div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <a class="project-visual visual-studio"
+   href="https://crezsayeem.github.io/CreXstudio/"
+   target="_blank"
+   rel="noopener"
+   aria-label="Open CreXstudio website">
 
-<section class="certifications-section section legacy-certifications" aria-hidden="true"></section>
+  <img src="assets/WhatsApp Image 2026-11-13 at 12.29.36 AM.jpeg"
+       alt="CreXstudio Website Preview">
 
+  <span class="project-overlay">
+    <strong>CREXSTUDIO®</strong>
+    <small>VIEW PROJECT ↗</small>
+  </span>
 
-<!-- =========================================================
-     AWARDS SECTION
-========================================================= -->
+</a>
+          <div class="project-meta"><div><h3>CreXstudio</h3><p>Creative studio · Brand & web</p></div><span>01</span></div>
+        </article>
+        <article class="project-card reveal">
+          <a class="project-visual visual-studio"
+   href="https://crezsayeem.github.io/CreXstudio/project-lost-horizons.html"
+   target="_blank"
+   rel="noopener"
+   aria-label="Open CreXstudio website">
 
-<section class="awards-section section" id="awards">
+  <img src="assets/Screenshot 2026-11-13 at 00-40-00 Lost Horizons CreXstudio.png"
+       alt="CreXstudio Website Preview">
 
-    <div class="container">
+  <span class="project-overlay">
+    <strong>Lost Horizons</strong>
+    <small>VIEW PROJECT ↗</small>
+  </span>
 
-        <div class="section-header reveal-up">
+</a>
+          <div class="project-meta"><div><h3>Lost Horizons</h3><p>Logo And Brand identity</p></div><span>02</span></div>
+        </article>
+        <article class="project-card reveal">
+          <a class="project-visual visual-studio"
+   href="https://crezsayeem.github.io/CreXstudio/project-soulvanta.html"
+   target="_blank"
+   rel="noopener"
+   aria-label="Open CreXstudio website">
 
-            <span class="section-number">
-                04
-            </span>
+  <img src="assets/Erma Stover-02(1).webp"
+       alt="CreXstudio Website Preview">
 
-            <span class="section-label">
-                Recognition & Honours
-            </span>
+  <span class="project-overlay">
+    <strong>Soulvanta Foundation</strong>
+    <small>VIEW PROJECT ↗</small>
+  </span>
 
+</a>
+          <div class="project-meta"><div><h3>Soulvanta Foundation</h3><p>Logo & Brand Identity</p></div><span>03</span></div>
+        </article>
+      </div>
+
+      <p class="content-note">Real Time Projects</p>
+    </section>
+
+    <section class="section-wrap section-space" id="awards">
+      <div class="section-head reveal"><div><p class="eyebrow">04 / RECOGNITION</p><h2>Awards & <em>honours.</em></h2></div><p class="section-aside">Milestones worth<br>remembering.</p></div>
+      <div class="award-grid">
+        <article class="award-card reveal"><div class="award-art award-a"><span>ACHIEVEMENT</span><b>01</b><i>✳</i></div><div><small>2021</small><h3>Started My Creative Journey</h3><p>Began my professional journey in graphic design, focusing on logo creation, visual storytelling, and building meaningful brand identities.</p></div></article>
+        <article class="award-card reveal"><div class="award-art award-b"><span>CREATIVITY</span><b>02</b><i>✦</i></div><div><small>2022</small><h3>Founder & CEO by CreXstudio</h3><p>Started building my creative studio, bringing together branding, logo design, and digital experiences to help businesses establish their identity.</p></div></article>
+        <article class="award-card reveal"><div class="award-art award-c"><span>LEARNING</span><b>03</b><i>◎</i></div><div><small>2026</small><h3>Expanding My Digital Skills</h3><p>Continuously exploring WordPress development, UI/UX design, and AI-powered technologies to create more innovative digital experiences.</p></div></article>
+         <article class="award-card reveal"><div class="award-art award-c"><span>Working</span><b>04</b><i>◎</i></div><div><small>JoarderTech</small><h3>Web Designer & Developer</h3><p>Worked on website design and development, creating modern, responsive, and user-friendly digital experiences..</p></div></article>
+        <article class="award-card reveal"><div class="award-art award-c"><span>Working</span><b>05</b><i>◎</i></div><div><small>HEZOX — Crypto Mining Operations Dashboard</small><h3>UI/UX Design · Dashboard Design · Web Development</h3><p>Designed a modern crypto mining operations dashboard focused on real-time monitoring, mining performance, operational analytics, and data visualization. Built with a clean interface to make complex mining data easier to understand and manage.</p></div></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-box section-wrap reveal">
+        <div class="contact-copy"><p class="eyebrow">05 / HAVE A PROJECT?</p><h2>Let's build<br>something <em>useful.</em></h2><p>Have an idea, a project or an opportunity? Tell me a little about it and let's start a conversation.</p>
+          <a class="email-link"
+   href="mailto:sayeemakber1@gmail.com">
+   sayeemakber1@gmail.com
+</a>
+          <p class="location-line">Based in Bangladesh · Working worldwide</p>
         </div>
-
-
-        <div class="awards-heading">
-
-            <h2 class="section-title reveal-up">
-                AWARDS &
-                <br>
-                HONOURS
-            </h2>
-
-        </div>
-
-
-        <div class="awards-list">
-
-
-            <!-- Award 01 -->
-
-            <article class="award-item">
-
-                <div class="award-year">
-                    2026
-                </div>
-
-
-                <div class="award-content">
-
-                    <h3>
-                        Creative Excellence
-                    </h3>
-
-                    <p>
-                        Recognition for creative design,
-                        digital branding, and professional work.
-                    </p>
-
-                </div>
-
-
-                <span class="award-arrow">
-                    ↗
-                </span>
-
-            </article>
-
-
-            <!-- Award 02 -->
-
-            <article class="award-item">
-
-                <div class="award-year">
-                    2025
-                </div>
-
-
-                <div class="award-content">
-
-                    <h3>
-                        Digital Innovation
-                    </h3>
-
-                    <p>
-                        Recognition for exploring modern
-                        technology and digital solutions.
-                    </p>
-
-                </div>
-
-
-                <span class="award-arrow">
-                    ↗
-                </span>
-
-            </article>
-
-
-            <!-- Award 03 -->
-
-            <article class="award-item">
-
-                <div class="award-year">
-                    2024
-                </div>
-
-
-                <div class="award-content">
-
-                    <h3>
-                        Design Achievement
-                    </h3>
-
-                    <p>
-                        Recognition for visual identity and
-                        creative design projects.
-                    </p>
-
-                </div>
-
-
-                <span class="award-arrow">
-                    ↗
-                </span>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     FEATURED SECTION
-========================================================= -->
-
-<section class="featured-section section" id="featured">
-
-    <div class="container">
-
-        <div class="section-header reveal-up">
-
-            <span class="section-number">
-                05
-            </span>
-
-            <span class="section-label">
-                Featured
-            </span>
-
-        </div>
-
-
-        <div class="featured-heading">
-
-            <h2 class="section-title reveal-up">
-                SELECTED
-                <br>
-                WORK & PROJECTS
-            </h2>
-
-            <p class="section-description">
-
-                A selection of branding, web development,
-                UI/UX, and digital projects.
-
-            </p>
-
-        </div>
-
-
-        <!-- Featured Projects -->
-
-        <div class="projects-grid">
-
-
-            <!-- Project 01 -->
-
-            <article class="project-card reveal-up">
-
-                <div class="project-image">
-
-                    <img
-                        src="./assets/lost-horizons.jpg"
-                        alt="Brand Identity Project"
-                    >
-
-                    <div class="project-overlay">
-
-                        <a href="#" class="project-link">
-                            
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="project-info">
-
-                    <div class="project-meta">
-                        Branding
-                    </div>
-
-                    <h3>
-                        Brand Identity
-                    </h3>
-
-                    <p>
-                        Modern visual identity created for a
-                        forward-thinking brand.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- Project 02 -->
-
-            <article class="project-card reveal-up">
-
-                <div class="project-image">
-
-                    <img
-                        src="./assets/wordpress.jpg"
-                        alt="Website Development Project"
-                    >
-
-                    <div class="project-overlay">
-
-                        <a href="#" class="project-link">
-                            
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="project-info">
-
-                    <div class="project-meta">
-                        Development
-                    </div>
-
-                    <h3>
-                        Modern Website
-                    </h3>
-
-                    <p>
-                        Responsive digital experience built
-                        with modern web technologies.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- Project 03 -->
-
-            <article class="project-card reveal-up">
-
-                <div class="project-image">
-
-                    <img
-                        src="./assets/soulvanta-foundation.jpg"
-                        alt="UI UX Design Project"
-                    >
-
-                    <div class="project-overlay">
-
-                        <a href="#" class="project-link">
-                            
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="project-info">
-
-                    <div class="project-meta">
-                        Logo Design
-                    </div>
-
-                    <h3>
-                        Logo & Branding
-                    </h3>
-
-                    <p>
-                        Designed a modern and meaningful brand identity for Soulvanta Foundation, combining a helping hand, human figure, “S” shape, and sun rays to represent support, empowerment, hope, and growth.
-
-The project includes logo variations, color palette, typography, and professional branding mockups.
-
-Client Satisfaction: Focused on the client's vision to deliver a clean, memorable, and professional identity.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- Project 04 -->
-
-            <article class="project-card reveal-up">
-
-                <div class="project-image">
-
-                    <img
-                        src="./assets/"
-                        alt="AI Development Project"
-                    >
-
-                    <div class="project-overlay">
-
-                        <a href="#" class="project-link">
-                            View Project ↗
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="project-info">
-
-                    <div class="project-meta">
-                        AI Development
-                    </div>
-
-                    <h3>
-                        AI Digital Product
-                    </h3>
-
-                    <p>
-                        Experimental AI-powered product focused
-                        on automation and intelligent interaction.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     CONTACT SECTION
-========================================================= -->
-
-<section class="contact-section section" id="contact">
-
-    <div class="container">
-
-        <div class="section-header reveal-up">
-
-            <span class="section-number">
-                06
-            </span>
-
-            <span class="section-label">
-                Let's Connect
-            </span>
-
-        </div>
-
-
-        <div class="contact-grid">
-
-
-            <!-- Contact Information -->
-
-            <div class="contact-info">
-
-                <h2 class="contact-title">
-                    LET'S BUILD
-                    <br>
-                    SOMETHING
-                    <br>
-                    USEFUL.
-                </h2>
-
-
-                <p class="contact-description">
-
-                    Have a project, idea, or collaboration in mind?
-                    Let’s talk about how we can turn it into something
-                    meaningful.
-
-                </p>
-
-
-                <div class="contact-details">
-
-
-                    <div class="contact-detail">
-
-                        <span class="contact-label">
-                            Email
-                        </span>
-
-                        <a
-                            href="mailto:sayeemakber1@gmail.com"
-                        >
-                            sayeemakber1@gmail.com
-                        </a>
-
-                    </div>
-
-
-                    <div class="contact-detail">
-
-                        <span class="contact-label">
-                            Location
-                        </span>
-
-                        <span>
-                            Bangladesh
-                        </span>
-
-                    </div>
-
-
-                    <div class="contact-detail">
-
-                        <span class="contact-label">
-                            Availability
-                        </span>
-
-                        <span class="available">
-                            Open for projects
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Contact Form -->
-
-            <div class="contact-form-wrapper">
-
-                <form
-                    class="contact-form"
-                    id="contactForm"
-                    action="#"
-                    method="POST"
-                >
-
-
-                    <!-- Name -->
-
-                    <div class="form-group">
-
-                        <label for="name">
-                            Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Your name"
-                            required
-                        >
-
-                    </div>
-
-
-                    <!-- Email -->
-
-                    <div class="form-group">
-
-                        <label for="email">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="you@example.com"
-                            required
-                        >
-
-                    </div>
-
-
-                    <!-- Subject -->
-
-                    <div class="form-group">
-
-                        <label for="subject">
-                            Subject
-                        </label>
-
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            placeholder="Project subject"
-                            required
-                        >
-
-                    </div>
-
-
-                    <!-- Message -->
-
-                    <div class="form-group">
-
-                        <label for="message">
-                            Message
-                        </label>
-
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="6"
-                            placeholder="Tell me about your project..."
-                            required
-                        ></textarea>
-
-                    </div>
-
-
-                    <!-- Submit -->
-
-                    <button
-                        type="submit"
-                        class="form-submit"
-                    >
-
-                        <span>
-                            Send Message
-                        </span>
-
-                        <span>
-                            ↗
-                        </span>
-
-                    </button>
-
-
-                    <!-- Form Status -->
-
-                    <div
-                        class="form-message"
-                        id="formMessage"
-                    ></div>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     HIRE ME CTA
-========================================================= -->
-
-<section class="hire-section">
-
-    <div class="container">
-
-        <div class="hire-box">
-
-            <span class="hire-small">
-                HAVE A PROJECT IN MIND?
-            </span>
-
-            <h2>
-                LET'S CREATE
-                <br>
-                SOMETHING GREAT.
-            </h2>
-
-            <a
-                href="mailto:sayeemakber1@gmail.com"
-                class="btn btn-primary"
-            >
-                <span>Hire Me</span>
-                <span>↗</span>
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-</main>
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
-<footer class="site-footer">
-
-    <div class="container">
-
-        <div class="footer-grid">
-
-
-            <!-- Footer Brand -->
-
-            <div class="footer-brand">
-
-                <a href="#home" class="site-logo">
-
-                    <span class="logo-mark">
-                        SA
-                    </span>
-
-                    <span class="logo-text">
-                        Sayeem Akber
-                    </span>
-
-                </a>
-
-
-                <p class="footer-description">
-
-                    Brand Designer, WordPress Developer,
-                    and AI Developer creating meaningful
-                    digital experiences.
-
-                </p>
-
-            </div>
-
-
-            <!-- Quick Links -->
-
-            <div class="footer-links">
-
-                <h3>
-                    Quick Links
-                </h3>
-
-                <a href="#about">
-                    About
-                </a>
-
-                <a href="#experience">
-                    Experience
-                </a>
-
-                <a href="#education">
-                    Education
-                </a>
-
-                <a href="#awards">
-                    Awards
-                </a>
-
-                <a href="#featured">
-                    Featured
-                </a>
-
-                <a href="#contact">
-                    Hire Me
-                </a>
-
-            </div>
-
-
-            <!-- Footer Contact -->
-
-            <div class="footer-contact">
-
-                <h3>
-                    Contact
-                </h3>
-
-                <a href="mailto:sayeemakber1@gmail.com">
-                    sayeemakber1@gmail.com
-                </a>
-
-                <span>
-                    Bangladesh
-                </span>
-
-                <a href="#contact">
-                    Start a Project ↗
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- Footer Bottom -->
-
-        <div class="footer-bottom">
-
-            <p>
-                © <span id="currentYear"></span>
-                Sayeem Akber. All rights reserved.
-            </p>
-
-
-            <div class="footer-socials">
-
-                <a
-                    href="https://www.fiverr.com/crezsayeem/"
-                    aria-label="Fiverr"
-                >
-                    Fiverr
-                </a>
-                <a
-                    href="https://www.upwork.com/freelancers/~01dd5ea18ef0b814d1?mp_source=share"
-                    aria-label="Upwork"
-                >
-                    Upwork
-                </a>
-
-
-                <a
-                    href="https://www.behance.net/crezsayeem"
-                    aria-label="Behance"
-                >
-                    Behance
-                </a>
-
-                <a
-                    href="https://dribbble.com/crezsayeem"
-                    aria-label="Dribbble"
-                >
-                    Dribbble
-                </a>
-
-                <a
-                    href="https://bd.linkedin.com/in/crezsayeem"
-                    aria-label="LinkedIn"
-                >
-                    LinkedIn
-                </a>
-                
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-</footer>
-
-
-<!-- =========================================================
-     BACK TO TOP
-========================================================= -->
-
-<button
-    class="back-to-top"
-    id="backToTop"
-    aria-label="Back to top"
->
-    ↑
-</button>
-
-
-<!-- =========================================================
-     MAIN JAVASCRIPT
-========================================================= -->
-
-<script src="./js/main.js"></script>
-
+        <form class="contact-form" id="contact-form">
+          <label for="name">Your name</label><input id="name" name="name" autocomplete="name" placeholder="Enter your name" required>
+          <label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <label for="subject">What is this about?</label><input id="subject" name="subject" placeholder="Website, branding, AI project..." required>
+          <label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="Tell me about your idea..." required></textarea>
+          <button class="send-button" type="submit">Prepare email <span>↗</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite">Your email app will open with your message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-wrap">
+    <div><a class="brand" href="#home">SAYEEM<span>.</span>A</a><p>Thoughtful design. Useful technology.</p></div>
+    <div class="footer-links"><a href="#about">About</a><a href="#projects">Work</a><a href="#contact">Contact</a><a href="https://www.fiverr.com/crezsayeem" target="_blank" rel="noopener">Fiverr↗</a><a href="https://www.upwork.com/freelancers/~01dd5ea18ef0b814d1?mp_source=share" target="_blank" rel="noopener">Upwork↗</a><a href="https://www.linkedin.com/in/crezsayeem?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">linkedin↗</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Sayeem A. All rights reserved.</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+  <button class="back-top" aria-label="Back to top">↑</button>
 </body>
 </html>
